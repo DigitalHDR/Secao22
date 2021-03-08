@@ -1,13 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
-import Multi, {BoaNoite} from './componentes/Multiplos'
-
-// import Primeiro from './componentes/Primeiro'
+import Filho from './componentes/Filho'
+import Pai from './componentes/Pai'
 
 ReactDOM.render(
     <div>
-        <Multi.BoaTarde  nome="Ana" />
-        <BoaNoite  nome="Bia" />
+        <Pai nome="Paulo" sobrenome="Silva" >
+            <Filho nome="Pedro"  />
+            <Filho nome="Paulo"  /> 
+            <Filho nome="Carla"  /> 
+        </Pai>
     </div>
 , document.getElementById('root'))
